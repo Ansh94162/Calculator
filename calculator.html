@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		#clear{
+			width: 250px;
+			height: 40px;
+		}
+		.formstyle{
+			width: 250px;
+			height: 400px;
+			margin: auto;
+			border: 2px solid orange;
+			border-radius: 6px;
+			background-image: url("jkl.jpg");
+
+		}
+		input{
+			width: 80px;
+			height: 40px;
+			background-color: black;
+			opacity: 0.65;
+			font-size: 30px;
+			color: teal;
+			border-bottom: 1px solid black;
+			border-radius: 6px;
+		}
+		#ans{
+			width: 245px;
+		}
+	</style>
+</head>
+<body bgcolor="seagreen">
+
+<div class="formstyle">
+	<form name="forms">
+		<input type="text" name="answer" id="ans"><br><br>
+		<input type="button" value=" 1 " onclick="forms.answer.value += '1' ">
+		<input type="button" value=" 2 " onclick="forms.answer.value += '2' ">
+		<input type="button" value=" 3 " onclick="forms.answer.value += '3' ">
+<br><br>
+		<input type="button" value=" 4 " onclick="forms.answer.value += '4' ">
+		<input type="button" value=" 5 " onclick="forms.answer.value += '5' ">
+		<input type="button" value=" 6 " onclick="forms.answer.value += '6' ">
+<br><br>
+		<input type="button" value=" 7 " onclick="forms.answer.value += '7' ">
+		<input type="button" value=" 8 " onclick="forms.answer.value += '8' ">
+		<input type="button" value=" 9 " onclick="forms.answer.value += '9' ">
+<br><br>
+		<input type="button" value=" + " onclick="forms.answer.value += '+' ">
+		<input type="button" value=" 0 " onclick="forms.answer.value += '0' ">
+		<input type="button" value=" * " onclick="forms.answer.value += '*' ">
+<br><br>
+		<input type="button" value=" / " onclick="forms.answer.value += '/' ">
+		<input type="button" value=" - " onclick="forms.answer.value += '-' ">
+		<input type="button" value=" = " onclick="forms.answer.value = eval(forms.answer.value) ">
+<br><br>
+		<input type="button" value="Clear All" onclick="forms.answer.value = '' " id='clear'>
+
+	</form>
+</body>
+</html>
+
